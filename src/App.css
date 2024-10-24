@@ -1,0 +1,27 @@
+/* Custom styles for the disconnect button */
+.custom-disconnect-btn {
+    background-color: #ff4d4d; /* red background */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.custom-disconnect-btn:hover {
+    background-color: #ff1a1a; /* darker red on hover */
+}
+
+/* Custom styles for the connect button */
+.custom-connect-btn {
+    background-color: #4CAF50; /* green background */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.custom-connect-btn:hover {
+    background-color: #45a049; /* darker green on hover */
+}
