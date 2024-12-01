@@ -6,16 +6,16 @@ import SignupFormDemo from "./launchPad";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="h-screen overflow-hidden flex flex-col dark:bg-black">  {/* Set full height and prevent overflow */}
         <Navbar />
         
         {/* Define Routes for your different pages */}
-        <Routes>
-          <Route path="/" element={<SpotlightPreview />} />
-          <Route path="/start" element= { <SignupFormDemo/>} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
-        </Routes>
+        <div className="flex-1 overflow-hidden"> {/* Ensures the content area uses full remaining height */}
+          <Routes>
+            <Route path="/" element={<SpotlightPreview />} />
+            <Route path="/start" element={ <SignupFormDemo />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
