@@ -13,5 +13,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"), // Alias for your source folder
     },
   },
-  base: '/',  // Set base path for production. Change if using a subdirectory.
 });
