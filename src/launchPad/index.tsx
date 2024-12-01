@@ -30,8 +30,9 @@ export default function SignupFormDemo() {
   const [name, setName] = useState<string>();
   const [symbol, setSymbol] = useState<string>();
   const [imgUrl, setImgUrl] = useState<string>();
-  const [initialSupply, setInitialSupply] = useState<string>();
-  const [transactionResult, setTransactionResult] = useState<string | null>(null);
+  // To be implemented
+  //const [initialSupply, setInitialSupply] = useState<string>();
+  //const [transactionResult, setTransactionResult] = useState<string | null>(null);
   const [tokens, setTokens] = useState<
   { name: string; symbol: string; imgUrl: string; mintAddress: string; transactionResult: string }[]
 >([]);
@@ -176,7 +177,7 @@ export default function SignupFormDemo() {
             onChange={(e) => setImgUrl(e.target.value)}
           />
         </LabelInputContainer>
-        <LabelInputContainer className="mb-8">
+        {/* <LabelInputContainer className="mb-8">
           <Label htmlFor="initialSupply">Initial Supply</Label>
           <Input
             id="initialSupply"
@@ -184,7 +185,7 @@ export default function SignupFormDemo() {
             type="text"
             onChange={(e) => setInitialSupply(e.target.value)}
           />
-        </LabelInputContainer>
+        </LabelInputContainer> */}
 
         <button
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
