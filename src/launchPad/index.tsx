@@ -4,20 +4,15 @@ import { Input } from "../componenets/input";
 import { cn } from "@/lib/utils";
 import {
   createInitializeMetadataPointerInstruction,
-  createInitializeMint2Instruction,
   createInitializeMintInstruction,
   ExtensionType,
-  getMinimumBalanceForRentExemptMint,
   getMintLen,
   LENGTH_SIZE,
-  MINT_SIZE,
   TOKEN_2022_PROGRAM_ID,
   TYPE_SIZE,
 } from "@solana/spl-token";
 import {
   Keypair,
-  mintKeypair,
-  PublicKey,
   SystemProgram,
   Transaction,
 } from "@solana/web3.js";
